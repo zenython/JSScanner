@@ -16,12 +16,12 @@ sudo apt install wget -y
 
 cd LinkFinder
 
-sudo pip3 install -r requirements.txt
-sudo python3 setup.py install
-pip install jsbeautifier
+sudo pip3 install -r requirements.txt --break-system-packages
+sudo python3 setup.py install --break-system-packages
+pip install jsbeautifier --break-system-packages
 
-echo "alias jsscanner='$cwd/script.sh'" >> ~/.bash_profile
+echo "alias jsscanner='$cwd/script.sh'" >> ~/.zshrc
 
-. ~/.bash_profile
+. ~/.zshrc
 
 echo "All set bro, restart your terminal!"
